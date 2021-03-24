@@ -1,0 +1,13 @@
+:Base
+Hello, world
+============
+
+This is my new website on DropPages.com
+
+What now?
+---------
+
+Find this file in your Dropbox folder at Dropbox/Apps/DropPages/eshulga.droppages.com/Content/index.txt - open it up and make a change.
+Changes will be synced to your website automatically within minutes.
+
+If you are unfamilair with how this works, head over to [the DropPages Getting Started Guide](http://droppages.com/Getting+started/Folder+Layout)
