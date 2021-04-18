@@ -7,24 +7,108 @@
      <title>E. Shulga One Page Resume</title>
 
      <style type="text/css">
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box
+        }
+
         * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; 
+        body { font: 1.6rem Helvetica, Sans-Serif; line-height: 2.4rem; 
         background-image: url(images/noisy-texture-200x200-o5-d10-c-ffffff-t0.png); }
         .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        #page-wrap { width: 80rem; margin: 4rem auto 6rem; }
+        #pic { float: right; margin: -3rem 0 0 0; }
+        h1 { margin: 0 0 1.6rem 0; padding: 0 0 1.6rem 0; font-size: 4.2rem; font-weight: bold; letter-spacing: -.2rem; border-bottom: .1rem solid #999; }
+        h2 { font-size: 2rem; margin: 0 0 .6rem 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 1.6rem; color: #999; font-weight: normal; }
+        p { margin: 0 0 1.6rem 0; }
+        a { color: #999; text-decoration: none; border-bottom: 0.1rem dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
+        ul { margin: 0 0 3.2rem 1.7rem; }
+        #objective { width: 50rem; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
+        dt { font-style: italic; font-weight: bold; font-size: 1.8rem; text-align: right; padding: 0 2.6rem 0 0; width: 15rem; float: left; height: 10rem; border-right: .1rem solid #999;  }
+        dd { width: 60rem; float: right; }
+        dd.clear { float: none; margin: 0; height: 1.5rem; }
+        .u-keyline {
+            position: relative
+        }
+
+        .l-Wrapper {
+            width: 80%;
+            max-width: 90rem;
+            margin-left: auto;
+            margin-right: auto
+        }
+        @media (max-width:767px) {
+            .l-Wrapper--reset\@sm-down {
+                width: 100%
+            }
+        }
+
+        .l-Footer {
+            font-size: 1.6rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 12.8rem -.8rem 3.2rem;
+            padding-top: 3.2rem
+        }
+
+        .l-Footer a {
+            text-decoration: none;
+            display: inline-block
+        }
+
+        .l-Footer a:not(:last-child) {
+            margin-right: 1.6rem
+        }
+
+        .l-Footer a:hover {
+            color: #111
+        }
+
+        .l-Footer-col {
+            padding-left: .8rem;
+            padding-right: .8rem
+        }
+        .Tag {
+            color: #111;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, .4);
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            display: inline-block;
+            padding-left: .8rem;
+            padding-right: .8rem
+        }
+
+        @media print {
+            html {
+                font-size: 50%
+            }
+            .l-Footer{
+                position: relative;
+                padding-top: 5px;
+                border-top: 1px solid #ddd
+                margin-top: 3.2rem
+            }
+
+            .l-Wrapper {
+                width: 100%;
+                max-width: none
+            }
+            .Tag {
+                font-weight: 900;
+                display: inline;
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+        .Contact:after {
+                content: "(053) 612-0793";
+                padding-left: 1.6rem
+            }
      </style>
 
 </head>
@@ -41,10 +125,9 @@
         
             <h1 class="fn">Evgeny Shulga</h1>
             
-            <p>
-                <!--Cell: <span class="tel">053-612-07-93</span><br /> -->
 
-                Email: <a class="email" href="mailto:shulgaevgeny@gmail.com">shulgaevgeny@gmail.com</a> 
+            <p>
+            Email: <a class="email" href="mailto:shulgaevgeny@gmail.com">shulgaevgeny@gmail.com</a> 
 
             </p>
         </div>
@@ -195,7 +278,7 @@
             <dt>Computer</dt>
             <dd>
                 <p>
-                    Scientific Computing: C++, Matlab, Python<br /> 
+                    Scientific Computing: C++, Matlab, Python, PyTorch, OpenCV<br /> 
                     Platforms: UNIX, MS Windows<br />
                     Linux Frameworks: Root, Garfield++, FreeCAD, LaTeX, MS Office
                 </p>
@@ -250,6 +333,17 @@
 
         <h4>To be Continued ...</h4>
         -->
+    </div>
+    <div class="l-Wrapper u-keyline">
+        <div class="l-Footer">
+            <div class="l-Footer-col">
+                <strong class="Tag">E. Shulga</strong>
+            </div>
+            <div class="l-Footer-col ">
+                <a href="https://www.linkedin.com/in/evgeny-shulga-42008b34/">LinkedIn</a>
+                <a href="mailto:shulgaevgeny@gmail.com">shulgaevgeny@gmail.com</a>
+            </div>
+        </div>
     </div>
 
 
