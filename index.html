@@ -124,9 +124,12 @@
         }
 
         .image {
+          opacity: 1;
           display: block;
           width: 100%;
           height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
         }
 
         .overlay {
@@ -146,14 +149,12 @@
           opacity: 1;
         }
 
-        .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
+        
+        .text{
+            background-color: #d8d9db;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
         }
 
         .row {
@@ -170,6 +171,7 @@
         .column {
           float: left;
           width: 33.3%;
+          position: relative;
         }
 
         /* Clear floats after rows */
@@ -183,6 +185,33 @@
         .content {
           background-color: white;
           padding: 10px;
+        }
+        .column:hover .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+        }
+        .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        .column:hover .image {
+            position: absolute;
+          opacity: 0.3;
+        }
+
+        .column:hover .middle {
+            position: absolute;
+          opacity: 1;
         }
 
         /* Responsive layout - makes a two column-layout instead of four columns */
@@ -343,34 +372,49 @@
             <h4><A HREF = "https://scholar.google.com/citations?hl=en&user=yy5IG9gAAAAJ">Google scholar.</A></h4>
     
             <dd class="clear"></dd>
-            <h3>Highlights:</h2>
+            <h3>Highlights:</h2>`
     
             <!-- Portfolio Gallery Grid -->
             <div class="row">
                 <div class="column">
-                  <div class="content">
-                    <img src="images/setup_2020.png" alt="Mountains" style="width:100%">
-                    <h3>2018-2021</h3>
-                    <h4>Measurement of the Ion Blocking by the Passive Bipolar Grid</h4>
-                    <p><a href="https://ieeexplore.ieee.org/document/9279256">e-Link</a></p>
-                  </div>
+                    <div class="content">
+                        <img src="images/setup_2020.png" alt="setup_2020" style="width:100%">
+                        <h4>2018-2021</h4>
+                        <h5>Measurement of the Ion Blocking by the Passive Bipolar Grid</h5>
+                        <div class="middle">
+                            <div class="text">
+                            <a href="https://ieeexplore.ieee.org/document/9279256">e-Link</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="column">
                   <div class="content">
-                    <img src="images/TRD.png" alt="Lights" style="width:85%">
-                    <h3>2016-2018</h3>
-                    <h4>First measurements of the spectral and angular distribution of transition radiation using a silicon pixel sensor on a Timepix3 chip</h4>
-                    <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900218316383?via%3Dihub">e-Link</a></p>
+                    <img src="images/TRD.png" alt="TRD" style="width:85%">
+                    <h4>2016-2018</h4>
+                    <h5>First measurements of the spectral and angular distribution of transition radiation using a silicon pixel sensor on a Timepix3 chip</h5>
+                    <div class="middle">
+                        <div class="text">
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900218316383?via%3Dihub">e-Link</a>
+                        </div>   
+                    </div>
                   </div>
                 </div>
+
                 <div class="column">
-                  <div class="content">
-                    <img src="images/RpA.png" alt="Mountains" style="width:60%">
-                    <h3>2012-2016</h3>
-                    <h4>Transverse momentum, rapidity, and centrality dependence of inclusive charged-particle production in sqrt(s_NN)=5.02 TeV p + Pb collisions measured by the ATLAS experiment</h4>
-                    <p><a href="https://www.sciencedirect.com/science/article/pii/S0370269316306244?via%3Dihub<">e-Link</a></p>
+                    <div class="content">
+                        <img src="images/RpA.png" alt="RpA" style="width:60%">
+                        <h4>2012-2016</h4>
+                        <h5>Transverse momentum, rapidity, and centrality dependence of inclusive charged-particle production in sqrt(s_NN)=5.02 TeV p + Pb collisions measured by the ATLAS experiment</h5>
+                        <div class="middle">
+                          <div class="text">
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0370269316306244?via%3Dihub<">e-Link</a>
+                          </div>   
+                      </div>
+                      
+                    </div>
                   </div>
-                </div>
+  
             </div>
           
                     
